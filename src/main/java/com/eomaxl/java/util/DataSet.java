@@ -20,7 +20,7 @@ public class DataSet {
         IntStream.rangeClosed(1, noOfItemsInCart)
                 .forEach((index) -> {
                     String cartItem = "CartItem -".concat(index + "");
-                    CartItem cartItem1 = new CartItem(index, cartItem, generateRandomPrice(), index, false);
+                    CartItem cartItem1 = new CartItem(index, cartItem, (int) generateRandomPrice(), 10.0, false);
                     cartItemList.add(cartItem1);
                 });
         cart.setCartItemList(cartItemList);
